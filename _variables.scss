@@ -1,0 +1,33 @@
+$blue: #046aed;
+$secondary-blue: #1c3fa8;
+$dark: #002240;
+$light: #f4f4f4;
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+@mixin gridCenter {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+$spaces: (1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+@each $space in $spaces {
+  .my-#{$space} {
+    margin: #{$space}rem 0;
+  }
+}
+
+@each $space in $spaces {
+  .py-#{$space} {
+    padding: #{$space}rem 0;
+  }
+}
