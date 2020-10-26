@@ -185,6 +185,13 @@ img {
   }
 }
 
+.socials {
+  i {
+    margin: 0 10px;
+    padding: 5px;
+  }
+}
+
 // Utilities
 
 .container {
@@ -275,4 +282,14 @@ img {
 .btn-dark {
   background-color: $dark;
   color: #fff;
+}
+
+// Media Queries
+
+@media (max-width: $mobile) {
+  @include mobileQuery;
+}
+
+@media (max-width: $tablet) {
+  @include tabletQuery;
 }
